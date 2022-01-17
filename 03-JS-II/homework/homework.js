@@ -7,6 +7,8 @@ function obtenerMayor(x, y) {
     // Tu código:
     if (x > y) {
         return x;
+    } else if (x < y) {
+        return y;
     } else {
         return y;
     }
@@ -49,7 +51,7 @@ function saludo(idioma) {
         return "Guten Tag!";
     } else if (idioma === "mandarin") {
         return "Ni Hao!";
-    } else if (idioma === ingles) {
+    } else if (idioma === "ingles") {
         return "Hello!";
     } else {
         return "Hola!";
@@ -170,7 +172,7 @@ function esPrimo(numero) {
 }
 
 function esVerdadero(valor) {
-    //Escribe una función que reciba un valor booleano y retorne “Soy verdadero” 
+    //Escribe una función que reciba un valor booleano y retorne “Soy verdadero”
     //si su valor es true y “Soy falso” si su valor es false.
     //Escribe tu código aquí
     if (valor === true) {
@@ -183,7 +185,7 @@ function esVerdadero(valor) {
 function tablaDelSeis() {
     //Escribe una función que muestre la tabla de multiplicar del 6 (del 0 al 60).
     //La función devuelve un array con los resultados de la tabla de multiplicar del 6 en orden creciente.
-    //Escribe tu código aquí   
+    //Escribe tu código aquí
     let arraytabladel6 = []
     for (let i = 0; i < 11; i++) {
         arraytabladel6.push(6 * i);
